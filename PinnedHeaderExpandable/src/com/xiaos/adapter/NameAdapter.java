@@ -10,8 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
 
-import com.xiaos.pinnedheaderexpandable.Content;
 import com.xiaos.pinnedheaderexpandable.R;
+import com.xiaos.values.Content;
 
 public class NameAdapter extends BaseAdapter implements SectionIndexer {
 

@@ -1,4 +1,4 @@
-package com.xiaos.pinnedheaderexpandable;
+package com.xiaos.Activity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,9 +18,15 @@ import android.widget.TextView;
 import com.xiaos.adapter.NameAdapter;
 import com.xiaos.adapter.utils.PinyinComparator;
 import com.xiaos.adapter.utils.PinyinLetterHelper;
+import com.xiaos.pinnedheaderexpandable.R;
+import com.xiaos.values.Content;
 import com.xiaos.view.SideBar;
-
-public class MainActivity extends Activity {
+/**
+ * 字母检索和旁边减速排序界面
+ * @author Administrator
+ *
+ */
+public class ListViewLayout extends Activity {
 
 	private ListView mListView;
 	private SideBar indexBar;
@@ -46,21 +52,15 @@ public class MainActivity extends Activity {
 		mWindowManager.addView(mDialogText, lp);
 		
 		indexBar.setTextView(mDialogText);
-		// ��ʼ������
 		List<Content> list = new ArrayList<Content>();
 		getDataIntoList(list);
-		// ����a-z��������
 		Collections.sort(list, new PinyinComparator());
-		// ʵ�����Զ�������������
 		NameAdapter adapter = new NameAdapter(this, list);
-		// ΪlistView��������
 		mListView.setAdapter(adapter);
-		// ����SideBar��ListView����ʵ�ֵ��a-z������һ�����ж�λ
 		indexBar.setListView(mListView);
 	}
 
 	/**
-	 * ��������䵽list��
 	 * 
 	 * @param list
 	 */

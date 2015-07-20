@@ -2,7 +2,7 @@ package com.xiaos.adapter.utils;
 
 import java.util.Comparator;
 
-import com.xiaos.pinnedheaderexpandable.Content;
+import com.xiaos.values.Content;
 
 public class PinyinComparator implements Comparator<Content> {
 

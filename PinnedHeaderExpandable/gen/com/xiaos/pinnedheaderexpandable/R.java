@@ -23,27 +23,31 @@ public final class R {
         public static final int expander_ic_maximized=0x7f020006;
         public static final int expander_ic_minimized=0x7f020007;
         public static final int ic_action_search=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int img=0x7f02000a;
-        public static final int mm_contact_title=0x7f02000b;
-        public static final int mm_listitem_normal=0x7f02000c;
-        public static final int mm_listitem_pressed=0x7f02000d;
-        public static final int mm_listitem_simple=0x7f02000e;
-        public static final int mm_title_btn_normal=0x7f02000f;
-        public static final int mm_title_btn_pressed=0x7f020010;
-        public static final int personactivity_takephoto_icon_normal=0x7f020011;
-        public static final int scroll_bar_search_icon=0x7f020012;
-        public static final int scrollbar_bg=0x7f020013;
-        public static final int search_bar_bg=0x7f020014;
-        public static final int search_bar_edit_bg=0x7f020015;
-        public static final int search_bar_edit_normal=0x7f020016;
-        public static final int search_bar_edit_pressed=0x7f020017;
-        public static final int search_bar_icon_normal=0x7f020018;
-        public static final int show_head_toast_bg=0x7f020019;
-        public static final int title_bar=0x7f02001a;
-        public static final int title_btn_right=0x7f02001b;
-        public static final int title_function_bg=0x7f02001c;
-        public static final int user_group=0x7f02001d;
+        public static final int ic_empty=0x7f020009;
+        public static final int ic_error=0x7f02000a;
+        public static final int ic_launcher=0x7f02000b;
+        public static final int ic_stub=0x7f02000c;
+        public static final int img=0x7f02000d;
+        public static final int mm_contact_title=0x7f02000e;
+        public static final int mm_listitem_normal=0x7f02000f;
+        public static final int mm_listitem_pressed=0x7f020010;
+        public static final int mm_listitem_simple=0x7f020011;
+        public static final int mm_title_btn_normal=0x7f020012;
+        public static final int mm_title_btn_pressed=0x7f020013;
+        public static final int personactivity_takephoto_icon_normal=0x7f020014;
+        public static final int scroll_bar_search_icon=0x7f020015;
+        public static final int scrollbar_bg=0x7f020016;
+        public static final int search_bar_bg=0x7f020017;
+        public static final int search_bar_edit_bg=0x7f020018;
+        public static final int search_bar_edit_normal=0x7f020019;
+        public static final int search_bar_edit_pressed=0x7f02001a;
+        public static final int search_bar_icon_normal=0x7f02001b;
+        public static final int show_head_toast_bg=0x7f02001c;
+        public static final int title_bar=0x7f02001d;
+        public static final int title_btn_right=0x7f02001e;
+        public static final int title_function_bg=0x7f02001f;
+        public static final int user_group=0x7f020020;
+        public static final int yy=0x7f020021;
     }
     public static final class id {
         public static final int catalog=0x7f070006;
@@ -53,6 +57,7 @@ public final class R {
         public static final int explistview=0x7f07000c;
         public static final int groupIcon=0x7f070002;
         public static final int groupto=0x7f070004;
+        public static final int image=0x7f07000d;
         public static final int img=0x7f070007;
         public static final int list=0x7f07000a;
         public static final int sideBar=0x7f07000b;
@@ -67,10 +72,10 @@ public final class R {
         public static final int group_head=0x7f030003;
         public static final int head=0x7f030004;
         public static final int item=0x7f030005;
-        public static final int layout_group=0x7f030006;
-        public static final int layout_list=0x7f030007;
-        public static final int layout_main=0x7f030008;
-        public static final int list_position=0x7f030009;
+        public static final int layout_list=0x7f030006;
+        public static final int layout_main=0x7f030007;
+        public static final int list_position=0x7f030008;
+        public static final int show_one_image=0x7f030009;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

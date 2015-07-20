@@ -1,5 +1,7 @@
-package com.xiaos.pinnedheaderexpandable;
+package com.xiaos.Activity;
 
+
+import com.xiaos.pinnedheaderexpandable.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-
-public class ActivityGroup extends Activity {
+/**
+ * 主界面
+ * @author Administrator
+ *
+ */
+public class MainActivity extends Activity {
 	private TextView tv_top, tv_down;
 
 	@Override
@@ -26,14 +32,14 @@ public class ActivityGroup extends Activity {
 			
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(ActivityGroup.this,MainActivity.class);
+				Intent intent = new Intent(MainActivity.this,ListViewLayout.class);
 				startActivity(intent);
 			}
 		});
 		tv_down.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View arg0) {
-				Intent intent = new Intent(ActivityGroup.this,GroupLayout.class);
+				Intent intent = new Intent(MainActivity.this,GroupLayout.class);
 				startActivity(intent);
 			}
 		});
