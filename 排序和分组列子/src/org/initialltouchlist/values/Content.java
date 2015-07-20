@@ -1,4 +1,4 @@
-package org.initialltouchlist;
+package org.initialltouchlist.values;
 
 public class Content {
 

@@ -9,7 +9,7 @@
         android:layout_height="fill_parent"
         android:divider="@null" />
 
-    <org.initialltouchlist.SideBar
+    <org.initialltouchlist.view.SideBar
         android:id="@+id/sideBar"
         android:layout_width="25dp"
         android:layout_height="wrap_content"

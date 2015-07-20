@@ -1,4 +1,6 @@
-package org.initialltouchlist;
+package org.initialltouchlist.view;
+
+import org.initialltouchlist.adapter.NameAdapter;
 
 import com.example.listsildedel.R;
 
@@ -72,7 +74,7 @@ public class SideBar extends View {
 			setBackgroundResource(R.drawable.scrollbar_bg);
 			mDialogText.setVisibility(View.VISIBLE);
 			/**
-			 * ÖÐÑëÏÔÊ¾µÄÌáÊ¾Ê××Ö·û
+			 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ö·ï¿½
 			 */
 			if (idx == 0) {
 				mDialogText.setText("Search");

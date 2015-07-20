@@ -1,6 +1,8 @@
-package org.initialltouchlist;
+package org.initialltouchlist.adapter;
 
 import java.util.List;
+
+import org.initialltouchlist.values.Content;
 
 import com.example.listsildedel.R;
 

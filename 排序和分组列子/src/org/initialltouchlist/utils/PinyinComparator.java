@@ -1,6 +1,8 @@
-package org.initialltouchlist;
+package org.initialltouchlist.utils;
 
 import java.util.Comparator;
+
+import org.initialltouchlist.values.Content;
 
 public class PinyinComparator implements Comparator<Content> {
 

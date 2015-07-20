@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.initialltouchlist.adapter.NameAdapter;
+import org.initialltouchlist.utils.PinyinComparator;
+import org.initialltouchlist.utils.PinyinLetterHelper;
+import org.initialltouchlist.values.Content;
+import org.initialltouchlist.view.SideBar;
+
 import com.example.listsildedel.R;
 
 import android.app.Activity;
@@ -27,7 +33,7 @@ public class MainActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		// Æô¶¯activityÊ±²»×Ô¶¯µ¯³öÈí¼üÅÌ
+		// ï¿½ï¿½ï¿½ï¿½activityÊ±ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_list);
@@ -44,21 +50,21 @@ public class MainActivity extends Activity {
 		mWindowManager.addView(mDialogText, lp);
 		
 		indexBar.setTextView(mDialogText);
-		// ³õÊ¼»¯Êı¾İ
+		// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		List<Content> list = new ArrayList<Content>();
 		getDataIntoList(list);
-		// ¸ù¾İa-z½øĞĞÅÅĞò
+		// ï¿½ï¿½ï¿½ï¿½a-zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Collections.sort(list, new PinyinComparator());
-		// ÊµÀı»¯×Ô¶¨ÒåÄÚÈİÊÊÅäÀà
+		// Êµï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		NameAdapter adapter = new NameAdapter(this, list);
-		// ÎªlistViewÉèÖÃÊÊÅä
+		// ÎªlistViewï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		mListView.setAdapter(adapter);
-		// ÉèÖÃSideBarµÄListViewÄÚÈİÊµÏÖµã»÷a-zÖĞÈÎÒâÒ»¸ö½øĞĞ¶¨Î»
+		// ï¿½ï¿½ï¿½ï¿½SideBarï¿½ï¿½ListViewï¿½ï¿½ï¿½ï¿½Êµï¿½Öµï¿½ï¿½a-zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½Î»
 		indexBar.setListView(mListView);
 	}
 
 	/**
-	 * ½«ÄÚÈİÌî³äµ½listÖĞ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½äµ½listï¿½ï¿½
 	 * 
 	 * @param list
 	 */

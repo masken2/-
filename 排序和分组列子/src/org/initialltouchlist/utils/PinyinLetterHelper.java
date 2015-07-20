@@ -1,19 +1,19 @@
-package org.initialltouchlist;
+package org.initialltouchlist.utils;
 
 import net.sourceforge.pinyin4j.PinyinHelper;
 
 public class PinyinLetterHelper {
 	/**
-	 * »ñÈ¡ÈËÃûµÄÆ´ÒôÊ××ÖÄ¸²¢ÇÒ´óÐ´»¯
+	 * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½Ò´ï¿½Ð´ï¿½ï¿½
 	 * 
 	 * @param name
-	 *            ÈËÃû×Ö·û´®£¬ÔÊÐí¿ªÍ·°üº¬Ó¢ÎÄÊý×ÖºÍÏÂ»®Ïß
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½Öºï¿½ï¿½Â»ï¿½ï¿½ï¿½
 	 * @return
 	 */
 	public static String getPinyinFirstLetter(String name) {
 		String firstletter = "#";
 		if (name != null) {
-			// ×ª»»Ç°²»¹ÜÊÇÖÐÎÄ»¹ÊÇÓ¢ÎÄÖ±½ÓÈ¡¿ªÍ·×Ö·û
+			// ×ªï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½Ö±ï¿½ï¿½È¡ï¿½ï¿½Í·ï¿½Ö·ï¿½
 			char initial = name.charAt(0);
 			System.out.print(initial + "  ---From:  " + name);
 			if (!((initial >= 'A' && initial <= 'Z')
