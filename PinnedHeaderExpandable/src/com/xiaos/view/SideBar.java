@@ -37,6 +37,9 @@ public class SideBar extends View {
 		init();
 	}
 
+	/**
+	 * 初始化字母跟图片数据
+	 */
 	private void init() {
 
 		l = new char[] { '!', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '#' };
@@ -73,7 +76,7 @@ public class SideBar extends View {
 			setBackgroundResource(R.drawable.scrollbar_bg);
 			mDialogText.setVisibility(View.VISIBLE);
 			/**
-			 * ������ʾ����ʾ���ַ�
+			 * 当位置为O的时候设置对话框的文字效果
 			 */
 			if (idx == 0) {
 				mDialogText.setText("Search");
@@ -118,7 +121,7 @@ public class SideBar extends View {
 					canvas.drawText(String.valueOf(l[i]), widthCenter, (i + 1) * height, paint);
 			}
 		}
-		this.invalidate();
+		this.invalidate();//刷新view
 		super.onDraw(canvas);
 	}
 }

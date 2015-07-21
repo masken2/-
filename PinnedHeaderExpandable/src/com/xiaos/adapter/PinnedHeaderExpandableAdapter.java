@@ -16,6 +16,11 @@ import com.xiaos.pinnedheaderexpandable.R;
 import com.xiaos.view.PinnedHeaderExpandableListView;
 import com.xiaos.view.PinnedHeaderExpandableListView.HeaderAdapter;
 
+/**
+ * 分组列表的item适配器
+ * @author Administrator
+ *
+ */
 public class PinnedHeaderExpandableAdapter extends BaseExpandableListAdapter
 		implements HeaderAdapter {
 	private String[][] childrenData;

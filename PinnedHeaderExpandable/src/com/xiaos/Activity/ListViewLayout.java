@@ -61,7 +61,7 @@ public class ListViewLayout extends Activity {
 	}
 
 	/**
-	 * 
+	 * 添加数据
 	 * @param list
 	 */
 	public void getDataIntoList(List<Content> list) {

@@ -7,8 +7,6 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -27,5 +25,7 @@
         <activity android:name="com.xiaos.Activity.ListViewLayout" />
         <activity android:name="com.xiaos.Activity.ShowOtherActivity" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

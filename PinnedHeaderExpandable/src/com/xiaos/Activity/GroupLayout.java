@@ -17,8 +17,9 @@ import com.xiaos.view.PinnedHeaderExpandableListView;
 
 /**
  * 仿QQ分组界面
+ * 
  * @author Administrator
- *
+ * 
  */
 public class GroupLayout extends Activity {
 	protected static final String TAG = "GroupLayout";
@@ -41,21 +42,8 @@ public class GroupLayout extends Activity {
 	 * 初始化VIEW
 	 */
 	private void initView() {
-		   url=ImageUrl.IMAGES;
+		url = ImageUrl.IMAGES;
 		explistview = (PinnedHeaderExpandableListView) findViewById(R.id.explistview);
-		explistview.setOnItemClickListener(new OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-					long arg3) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(GroupLayout.this,
-						ShowOtherActivity.class);
-				startActivity(intent);
-			Log.i(TAG, "你点击了我，为甚么没有反应");
-			}
-
-		});
 	}
 
 	/**
@@ -75,7 +63,7 @@ public class GroupLayout extends Activity {
 		explistview.setHeaderView(getLayoutInflater().inflate(
 				R.layout.group_head, explistview, false));
 		adapter = new PinnedHeaderExpandableAdapter(childrenData, groupData,
-				getApplicationContext(),url, explistview);
+				getApplicationContext(), url, explistview);
 		explistview.setAdapter(adapter);
 
 		// 设置单个分组展开

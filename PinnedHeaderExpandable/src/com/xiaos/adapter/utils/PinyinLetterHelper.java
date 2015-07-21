@@ -5,16 +5,13 @@ import net.sourceforge.pinyin4j.PinyinHelper;
 
 public class PinyinLetterHelper {
 	/**
-	 * ��ȡ������ƴ������ĸ���Ҵ�д��
-	 * 
+	 * 帮助类，把汉字转为打字字母的类
 	 * @param name
-	 *            �����ַ���������ͷ����Ӣ�����ֺ��»���
 	 * @return
 	 */
 	public static String getPinyinFirstLetter(String name) {
 		String firstletter = "#";
 		if (name != null) {
-			// ת��ǰ���������Ļ���Ӣ��ֱ��ȡ��ͷ�ַ�
 			char initial = name.charAt(0);
 			System.out.print(initial + "  ---From:  " + name);
 			if (!((initial >= 'A' && initial <= 'Z')
